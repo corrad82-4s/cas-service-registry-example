@@ -35,7 +35,7 @@
           "order":3
         },{
           "@class" : "org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy",
-          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role" ] ],
+          "allowedAttributes" : [ "java.util.ArrayList", [ "pgc-role", "reniec_authentication" ] ],
           order:4
         }
       ]
