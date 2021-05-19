@@ -7,7 +7,7 @@
   "signIdToken": true,
   "idTokenSigningAlg": "RS256",
   "name": "PGC OpenId Example LOCAL",
-  "id": 3,
+  "id": 30000,
   "generateRefreshToken": true,
   "jwtAccessToken": true,
   "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code" ] ],
