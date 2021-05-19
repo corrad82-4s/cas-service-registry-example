@@ -1,0 +1,18 @@
+{
+  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "clientloc",
+  "clientSecret": "secretloc",
+  "serviceId" : "http://localhost:8081/developers/auth-endpoint",
+  "implicit": true,
+  "signIdToken": true,
+  "idTokenSigningAlg": "RS256",
+  "name": "PGC OpenId Example LOCAL",
+  "id": 3,
+  "generateRefreshToken": true,
+  "jwtAccessToken": true,
+  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code" ] ],
+  "supportedResponseTypes": [ "java.util.HashSet", [ "code" ] ],
+  "scopes" : [ "java.util.HashSet",
+    [ "profile", "email", "role", "phone", "pgc-role" , "reniec-info"]
+  ]
+}
