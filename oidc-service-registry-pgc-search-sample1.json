@@ -15,8 +15,8 @@
   "scopes" : [ "java.util.HashSet",
     [ "pgc-public", "pgc-restricted"]
   ],
-  "serviceTicketExpirationPolicy": {
-      "@class": "org.apereo.cas.services.DefaultRegisteredServiceServiceTicketExpirationPolicy",
-      "timeToLive": "14400"
-    }
+  "accessTokenExpirationPolicy" : {
+    "@class": "org.apereo.cas.support.oauth.services.DefaultRegisteredServiceOAuthAccessTokenExpirationPolicy",
+    "maxTimeToLive" : 300
+  }
 }
