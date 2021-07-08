@@ -17,6 +17,7 @@
   ],
   "accessTokenExpirationPolicy" : {
     "@class": "org.apereo.cas.support.oauth.services.DefaultRegisteredServiceOAuthAccessTokenExpirationPolicy",
-    "maxTimeToLive" : 300
+    "maxTimeToLive" : 300,
+    "timeToKill" : 300
   }
 }
