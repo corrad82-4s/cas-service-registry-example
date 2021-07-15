@@ -1,0 +1,23 @@
+{
+  "@class" : "org.apereo.cas.services.OidcRegisteredService",
+  "clientId": "pgc-sample-client-one",
+  "clientSecret": "pgc-sample-client-one",
+  "serviceId" : "https://pgc-example.com/callback",
+  "implicit": true,
+  "signIdToken": true,
+  "idTokenSigningAlg": "RS256",
+  "name": "PGC Search Sample One",
+  "id": 2001,
+  "generateRefreshToken": true,
+  "jwtAccessToken": true,
+  "supportedGrantTypes": [ "java.util.HashSet", [ "authorization_code", "client_credentials", "refresh_token"] ],
+  "supportedResponseTypes": [ "java.util.HashSet", [ "code",  ] ],
+  "scopes" : [ "java.util.HashSet",
+    [ "pgc-public", "pgc-restricted"]
+  ],
+  "accessTokenExpirationPolicy" : {
+    "@class": "org.apereo.cas.support.oauth.services.DefaultRegisteredServiceOAuthAccessTokenExpirationPolicy",
+    "maxTimeToLive" : 300,
+    "timeToKill" : 300
+  }
+}
